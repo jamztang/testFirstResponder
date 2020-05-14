@@ -53,6 +53,7 @@
 		1A4CBBF5246CE2AC00BC74B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A4CBC01246CFA8A00BC74B2 /* Routing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
 		1A4CBC03246CFAD900BC74B2 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		1A4CBC05246CFD0500BC74B2 /* testFirstResponder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = testFirstResponder.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +104,7 @@
 		1A4CBBD0246CE2A900BC74B2 /* testFirstResponder */ = {
 			isa = PBXGroup;
 			children = (
+				1A4CBC05246CFD0500BC74B2 /* testFirstResponder.entitlements */,
 				1A4CBBD1246CE2A900BC74B2 /* AppDelegate.swift */,
 				1A4CBBD3246CE2A900BC74B2 /* SceneDelegate.swift */,
 				1A4CBBD5246CE2A900BC74B2 /* ViewController.swift */,
@@ -442,15 +444,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = testFirstResponder/testFirstResponder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H5BVQ8XRL4;
 				INFOPLIST_FILE = testFirstResponder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.goodnotes.testFirstResponder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -460,15 +465,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = testFirstResponder/testFirstResponder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H5BVQ8XRL4;
 				INFOPLIST_FILE = testFirstResponder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.goodnotes.testFirstResponder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
