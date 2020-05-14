@@ -17,12 +17,38 @@ class TableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let cell = tableView.cellForRow(at: indexPath) else { fatalError() }
+        Swift.print("TTT first responder \(String(describing: UIResponder.current))")
+
         switch cell.reuseIdentifier {
-        case .some("push"):
-            dismiss(animated: true, completion: nil)
-            UIApplication.shared.sendAction(.push, to: nil, from: self, for: nil)
-        case .some("modal"):
+        case .some("pushai"):
+            print("TTT popover push animated without waiting")
             dismiss(animated: true, completion: {
+                Swift.print("TTT first responder \(String(describing: UIResponder.current))")
+            })
+            UIApplication.shared.sendAction(.push, to: nil, from: self, for: nil)
+        case .some("pushi"):
+            print("TTT popover push without waiting")
+            dismiss(animated: false, completion: {
+                Swift.print("TTT first responder \(String(describing: UIResponder.current))")
+            })
+            UIApplication.shared.sendAction(.push, to: nil, from: self, for: nil)
+        case .some("pushauc"):
+            print("TTT popover push animated and wait")
+            dismiss(animated: true, completion: {
+                Swift.print("TTT first responder \(String(describing: UIResponder.current))")
+                UIApplication.shared.sendAction(.push, to: nil, from: self, for: nil)
+            })
+        case .some("pushuc"):
+            print("TTT popover push and wait")
+            dismiss(animated: false, completion: {
+                Swift.print("TTT first responder \(String(describing: UIResponder.current))")
+                UIApplication.shared.sendAction(.push, to: nil, from: self, for: nil)
+            })
+        case .some("modal"):
+            print("TTT popover modal")
+            dismiss(animated: true, completion: { [weak self] in
+                guard let self = self else { return }
+                print("TTT popover animated dismiss completion")
                 UIApplication.shared.sendAction(.modal, to: nil, from: self, for: nil)
             })
         case .some(let identifier):

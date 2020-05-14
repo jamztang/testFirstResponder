@@ -17,6 +17,7 @@
 		1A4CBBF4246CE2AC00BC74B2 /* testFirstResponderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4CBBF3246CE2AC00BC74B2 /* testFirstResponderUITests.swift */; };
 		1A4CBC02246CFA8A00BC74B2 /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4CBC01246CFA8A00BC74B2 /* Routing.swift */; };
 		1A4CBC04246CFAD900BC74B2 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4CBC03246CFAD900BC74B2 /* TableViewController.swift */; };
+		1A4CBC07246D01FC00BC74B2 /* UIResponder+CurrentResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4CBC06246D01FC00BC74B2 /* UIResponder+CurrentResponder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		1A4CBC01246CFA8A00BC74B2 /* Routing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
 		1A4CBC03246CFAD900BC74B2 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		1A4CBC05246CFD0500BC74B2 /* testFirstResponder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = testFirstResponder.entitlements; sourceTree = "<group>"; };
+		1A4CBC06246D01FC00BC74B2 /* UIResponder+CurrentResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+CurrentResponder.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				1A4CBC03246CFAD900BC74B2 /* TableViewController.swift */,
 				1A4CBC01246CFA8A00BC74B2 /* Routing.swift */,
 				1A4CBBD7246CE2A900BC74B2 /* Main.storyboard */,
+				1A4CBC06246D01FC00BC74B2 /* UIResponder+CurrentResponder.swift */,
 				1A4CBBDA246CE2AB00BC74B2 /* Assets.xcassets */,
 				1A4CBBDC246CE2AB00BC74B2 /* LaunchScreen.storyboard */,
 				1A4CBBDF246CE2AB00BC74B2 /* Info.plist */,
@@ -272,6 +275,7 @@
 				1A4CBBD2246CE2A900BC74B2 /* AppDelegate.swift in Sources */,
 				1A4CBC04246CFAD900BC74B2 /* TableViewController.swift in Sources */,
 				1A4CBBD4246CE2A900BC74B2 /* SceneDelegate.swift in Sources */,
+				1A4CBC07246D01FC00BC74B2 /* UIResponder+CurrentResponder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
