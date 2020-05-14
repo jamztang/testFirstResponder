@@ -16,6 +16,7 @@
 		1A4CBBE9246CE2AB00BC74B2 /* testFirstResponderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4CBBE8246CE2AB00BC74B2 /* testFirstResponderTests.swift */; };
 		1A4CBBF4246CE2AC00BC74B2 /* testFirstResponderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4CBBF3246CE2AC00BC74B2 /* testFirstResponderUITests.swift */; };
 		1A4CBC02246CFA8A00BC74B2 /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4CBC01246CFA8A00BC74B2 /* Routing.swift */; };
+		1A4CBC04246CFAD900BC74B2 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4CBC03246CFAD900BC74B2 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		1A4CBBF3246CE2AC00BC74B2 /* testFirstResponderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testFirstResponderUITests.swift; sourceTree = "<group>"; };
 		1A4CBBF5246CE2AC00BC74B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A4CBC01246CFA8A00BC74B2 /* Routing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
+		1A4CBC03246CFAD900BC74B2 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				1A4CBBD1246CE2A900BC74B2 /* AppDelegate.swift */,
 				1A4CBBD3246CE2A900BC74B2 /* SceneDelegate.swift */,
 				1A4CBBD5246CE2A900BC74B2 /* ViewController.swift */,
+				1A4CBC03246CFAD900BC74B2 /* TableViewController.swift */,
 				1A4CBC01246CFA8A00BC74B2 /* Routing.swift */,
 				1A4CBBD7246CE2A900BC74B2 /* Main.storyboard */,
 				1A4CBBDA246CE2AB00BC74B2 /* Assets.xcassets */,
@@ -265,6 +268,7 @@
 				1A4CBC02246CFA8A00BC74B2 /* Routing.swift in Sources */,
 				1A4CBBD6246CE2A900BC74B2 /* ViewController.swift in Sources */,
 				1A4CBBD2246CE2A900BC74B2 /* AppDelegate.swift in Sources */,
+				1A4CBC04246CFAD900BC74B2 /* TableViewController.swift in Sources */,
 				1A4CBBD4246CE2A900BC74B2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -52,7 +52,7 @@
         <!--Table View Controller-->
         <scene sceneID="xBn-JL-m4W">
             <objects>
-                <tableViewController id="OY6-0Z-Kvx" sceneMemberID="viewController">
+                <tableViewController id="OY6-0Z-Kvx" customClass="TableViewController" customModule="testFirstResponder" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Hj2-dn-9cM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

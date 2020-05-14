@@ -22,4 +22,8 @@ class ViewController: UIViewController {
     @IBAction func modal(_ sender: Any) {
         self.present(.rootNav, animated: true, completion: nil)
     }
+
+    override var canBecomeFirstResponder: Bool {
+        return true
+    }
 }

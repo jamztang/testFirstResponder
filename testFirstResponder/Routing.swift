@@ -19,3 +19,8 @@ extension UIViewController {
         UIStoryboard.main.instantiateViewController(identifier: "root")
     }
 }
+
+extension Selector {
+    static let push = #selector(ViewController.push(_:))
+    static let modal = #selector(ViewController.modal(_:))
+}
