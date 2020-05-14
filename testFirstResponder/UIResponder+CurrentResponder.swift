@@ -20,3 +20,13 @@ extension UIResponder {
         UIResponder._current = self
     }
 }
+
+extension UIViewController {
+    func dismissAndRestoreFirstResponder(animated: Bool, completion: (()->Void)?) {
+        let firstResponder = UIResponder.current
+        dismiss(animated: animated, completion: {
+            firstResponder?.becomeFirstResponder()
+            completion?()
+        })
+    }
+}
