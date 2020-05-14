@@ -15,6 +15,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func push(_ sender: Any) {
+        self.navigationController?.pushViewController(.root, animated: true)
+    }
 
+    @IBAction func modal(_ sender: Any) {
+        self.present(.rootNav, animated: true, completion: nil)
+    }
 }
-
