@@ -13,6 +13,13 @@ private extension Selector {
 }
 class ViewController: UIViewController {
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showSegue" {
+            let destination = segue.destination
+            destination.popoverPresentationController?.delegate = self
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -34,8 +41,11 @@ class ViewController: UIViewController {
     }
 
     @IBAction func modal(_ sender: Any) {
+        let vc: UIViewController = .rootNav
         print("TTT vc modal")
-        self.present(.rootNav, animated: true, completion: nil)
+        self.present(vc, animated: true, completion: nil)
+        print("TTT vc modal \(vc.presentationController)")
+        vc.presentationController?.delegate = self
     }
 
     @IBAction func dismiss(_ sender: Any) {
@@ -44,5 +54,17 @@ class ViewController: UIViewController {
 
     override var canBecomeFirstResponder: Bool {
         return true
+    }
+}
+
+extension ViewController: UIAdaptivePresentationControllerDelegate {
+    func presentationControllerDidDismiss(_ presentationController: UIPresentationController) {
+        Swift.print("TTT didDismiss \(presentationController)")
+    }
+}
+
+extension ViewController: UIPopoverPresentationControllerDelegate {
+    func presentationControllerDidAttemptToDismiss(_ presentationController: UIPresentationController) {
+        Swift.print("TTT presentationControllerDidAttemptToDismiss \(presentationController)")
     }
 }

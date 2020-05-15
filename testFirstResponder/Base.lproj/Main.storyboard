@@ -38,7 +38,7 @@
                     <navigationItem key="navigationItem" id="LYb-gB-5MY">
                         <barButtonItem key="rightBarButtonItem" title="Show" id="bZZ-Kf-8PX">
                             <connections>
-                                <segue destination="OY6-0Z-Kvx" kind="popoverPresentation" popoverAnchorBarButtonItem="bZZ-Kf-8PX" id="rYI-T3-5ca">
+                                <segue destination="OY6-0Z-Kvx" kind="popoverPresentation" identifier="showSegue" popoverAnchorBarButtonItem="bZZ-Kf-8PX" id="rYI-T3-5ca">
                                     <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                 </segue>
                             </connections>

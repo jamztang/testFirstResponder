@@ -46,10 +46,10 @@ class TableViewController: UITableViewController {
             })
         case .some("modal"):
             print("TTT popover modal")
+            UIApplication.shared.sendAction(.modal, to: nil, from: self, for: nil)
             dismiss(animated: true, completion: { [weak self] in
                 guard let self = self else { return }
                 print("TTT popover animated dismiss completion")
-                UIApplication.shared.sendAction(.modal, to: nil, from: self, for: nil)
             })
         case .some(let identifier):
             fatalError("Not handled \(identifier)")
